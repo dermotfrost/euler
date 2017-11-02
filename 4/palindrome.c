@@ -3,7 +3,21 @@
 
 int is_palindrome(int p) {
 
-	return 1;
+	int number, digit, reverse;
+
+	number = p;
+	reverse = 0;
+
+	while(number > 0) {
+		digit = number%10;
+		reverse = reverse*10+digit;
+		number = number/10;
+	}
+
+	if(p == reverse) 
+		return 1;
+	else
+		return 0;
 }
 
 int main() {
@@ -21,9 +35,8 @@ int main() {
 		b = start_b;
 		
 		while(a<=999 && b>99) {
-			// printf("%d x %d = %d\n", a, b, a*b);
 			if(is_palindrome(a*b)) {
-				printf("%d\n", a*b);
+				printf("%d x %d = %d\n", a, b, a*b);
 				return 0;
 			}
 			
