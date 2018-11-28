@@ -1,0 +1,19 @@
+
+2 - RD, DR = 2
+3 - 	RRDD,
+	RDRD, RDDR,
+	DRDR, DRRD,
+	DDRR = 6
+4 - 	(RRRD)DD,
+	(RRD)
+	(RD)(+F(3))
+	(DR)(+F(3))
+	(DDR)(
+	(DDDR)RR
+	
+6 balls, three of each colour. How many different orderings?
+
+Start in lower right and work backwards
+
+
+20 - 
